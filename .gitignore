@@ -1,0 +1,322 @@
+# ===================================
+# ServiFácil - GitIgnore Completo
+# Backend (Spring Boot) + Frontend (React)
+# ===================================
+
+# ===================================
+# BACKEND (Java/Spring Boot/Maven)
+# ===================================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Spring Boot
+spring-boot-starter-parent/
+HELP.md
+.springBeans
+
+# ===================================
+# FRONTEND (Node.js/React/Vite)
+# ===================================
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Production build
+dist/
+dist-ssr/
+build/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cache
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite
+*.local
+.vite/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===================================
+# IDEs e Editores
+# ===================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ===================================
+# Sistema Operacional
+# ===================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# Banco de Dados
+# ===================================
+
+# MySQL
+*.sql.backup
+*.sql.bak
+
+# H2 Database
+*.db
+*.trace.db
+*.lock.db
+
+# ===================================
+# Arquivos Temporários
+# ===================================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ===================================
+# Segurança e Credenciais
+# ===================================
+
+# Arquivos de configuração com credenciais
+application-local.properties
+application-dev.properties
+application-prod.properties
+!application.properties.example
+
+# Chaves e certificados
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+
+# Tokens e secrets
+secrets.yml
+secrets.json
+.secrets
+
+# ===================================
+# Documentação Gerada
+# ===================================
+
+# JavaDoc
+javadoc/
+docs/api/
+
+# ===================================
+# Testes
+# ===================================
+
+# Test results
+test-results/
+junit/
+*.test.js.snap
+
+# ===================================
+# Outros
+# ===================================
+
+# Arquivos de lock (manter package-lock.json e pom.xml)
+# yarn.lock (opcional, descomente se não quiser versionar)
+# package-lock.json (opcional, descomente se não quiser versionar)
+
+# Arquivos grandes
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.iso
+
+# Arquivos de documentação temporários
+*.md.backup
+*.md.tmp
+
+# ===================================
+# Específico do Projeto ServiFácil
+# ===================================
+
+# Scripts de banco de dados executados
+*.executed.sql
+
+# Logs da aplicação
+logs/
+*.log.*
+
+# Uploads (se houver pasta de uploads)
+uploads/
+temp-uploads/
+
+# Cache da aplicação
+.cache/
+cache/
+
+# ===================================
+# Manter estes arquivos
+# ===================================
+
+# Manter arquivos de exemplo
+!.env.example
+!application.properties.example
+
+# Manter scripts importantes
+!fix-profile-photo-column.sql
+!executar-fix-photo.bat
+
+# Manter documentação
+!README.md
+!MELHORIAS-BACKEND.md
+!*.md

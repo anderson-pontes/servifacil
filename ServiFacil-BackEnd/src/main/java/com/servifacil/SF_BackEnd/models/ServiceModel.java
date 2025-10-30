@@ -40,7 +40,7 @@ public class ServiceModel {
     @JoinColumn(name = "Professional_ID")
     private UserModel professional;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "Category_ID")
     private CategoryModel category;
 
@@ -66,7 +66,8 @@ public class ServiceModel {
 
         // Converte texto do banco para Enum
         public static ServiceModel.ServiceStatus fromDisplayName(String dbValue) {
-            if (dbValue == null) return null;
+            if (dbValue == null)
+                return null;
             for (ServiceModel.ServiceStatus status : values()) {
                 if (status.displayName.equalsIgnoreCase(dbValue)) {
                     return status;
@@ -78,23 +79,55 @@ public class ServiceModel {
 
     // GETTERS & SETTERS
 
-    public int getServiceId(){ return this.serviceId; }
+    public int getServiceId() {
+        return this.serviceId;
+    }
 
-    public String getTitle(){ return this.title; }
-    public void setTitle(String title){ this.title = title; }
+    public String getTitle() {
+        return this.title;
+    }
 
-    public BigDecimal getPrice(){ return this.price; }
-    public void setPrice(BigDecimal price){ this.price = price; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    public String getDetails(){ return this.details; }
-    public void setDetails(String details){ this.details = details; }
+    public BigDecimal getPrice() {
+        return this.price;
+    }
 
-    public UserModel getProfessional(){ return this.professional; }
-    public void setProfessional(UserModel professional){ this.professional = professional; }
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
 
-    public CategoryModel getCategory(){ return this.category; }
-    public void setCategory(CategoryModel category){ this.category = category; }
+    public String getDetails() {
+        return this.details;
+    }
 
-    public ServiceStatus getServiceStatus(){ return this.serviceStatus; }
-    public void setServiceStatus(ServiceStatus serviceStatus){ this.serviceStatus = serviceStatus; }
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
+    public UserModel getProfessional() {
+        return this.professional;
+    }
+
+    public void setProfessional(UserModel professional) {
+        this.professional = professional;
+    }
+
+    public CategoryModel getCategory() {
+        return this.category;
+    }
+
+    public void setCategory(CategoryModel category) {
+        this.category = category;
+    }
+
+    public ServiceStatus getServiceStatus() {
+        return this.serviceStatus;
+    }
+
+    public void setServiceStatus(ServiceStatus serviceStatus) {
+        this.serviceStatus = serviceStatus;
+    }
 }
